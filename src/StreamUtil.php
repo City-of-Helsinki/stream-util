@@ -90,7 +90,7 @@ class StreamUtil
     {
         $stat = fstat($stream);
 
-        return $stat['size'];
+        return $stat['size'] ?? 0;
     }
 
     /**
